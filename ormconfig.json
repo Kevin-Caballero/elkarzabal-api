@@ -1,0 +1,19 @@
+{
+  "type": "mysql",
+  "host": "elkarzabal-db",
+  "port": 3306,
+  "username": "elkaruser",
+  "password": "elkarpass",
+  "database": "elkarzabal",
+  "entities": [
+    "dist/**/*.entity{.ts,.js}"
+  ],
+  "synchronize": true,
+  "cli": {
+    "migrationsDir": "src/database/migrations"
+  },
+  "seeds": [
+    "dist/**/*.seed{.ts,.js}"
+  ],
+  "logging": "error"
+}
